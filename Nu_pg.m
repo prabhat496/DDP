@@ -5,8 +5,8 @@ function Nu_pg = Nu_pg(beta, Ra)		% Nusselt number b/w two parallel plates
 
 	if (b<0)
 		b=0;
-    end
-    
+	end
+
 	if (c<0)
 		c=0;
 	end

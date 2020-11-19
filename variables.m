@@ -4,6 +4,7 @@
 % 	DIMESIONS
 
 L_collector 			% Length of the collector
+D_hydrolic			% Hydrolic diameter of pipe
 width_collector 		% Width of the collector
 beta				% Angle of tilt of collector from the ground
 gap_bottom_plate		% gap between plate and bottom insulations
@@ -18,6 +19,8 @@ vol_expan_coeff			% Voumetric expansion coefficient ( 1/T for ideal gases )
 v_air				% Velocity of air
 m_flow				% Mass flow rate of the air
 rho_air				% Density of the air
+therm_conductivity		% Thermal Conductivity of the air
+C_air				% Heat Capacity of the air (constant pressure)
 
 
 % NUMBERS
@@ -25,6 +28,7 @@ rayleigh			% rayleigh number
 Nu_pg				% Nusselt number b/w plate and glazing
 sigma				% Stefan constant
 prandtl				% Prandtl Number
+reynolds			% Reynold's Number
 Nu_pf				% Nusselt number b/w plate and working fluid
 
 % TEMPERATURES
@@ -33,6 +37,7 @@ T_glazing			% Glazing Temperature
 T_plate				% Plate Temperature
 T_fluid				% Temperature of the working fluid
 T_sky				% Sky Temperature
+S				% Hourly average of Solar Radiation
 
 % HEAT TRANSFER COEFFICIENTS
 %	RADIATIVE HEAT TRANSFER COEFFICIENTS
