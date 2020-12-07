@@ -1,0 +1,11 @@
+T_ambient = 298;
+T_plate = T_ambient+2;
+T_glazing = T_ambient+1;
+T_fluid = T_ambient;
+T_bottom = T_ambient;
+
+
+	while(abs(T_fluid1-T_fluid)>0.001)
+
+		[T_plate, T_glazing, T_bottom, T_fluid1, T_fluid] = collector_iteration(T_plate, T_glazing, T_bottom, T_fluid1)
+	end
