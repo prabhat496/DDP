@@ -8,19 +8,17 @@ bottom_temp = zeros(1, num);
 T_ambient = 298;
 T_plate   =  340;
 T_glazing = T_ambient+1;
-%fluid   = T_ambient;
 T_bottom = T_ambient+5;
 T_fluido = 316;
 
 
-%[T_plate, T_glazing, T_bottom, T_fluid] = collector_iteration(T_plate, T_glazing, T_bottom, T_fluid);
 for j = 1:num
     
     for i = 1:100
     
         %while(i<num)
 
-        [T_plate, T_glazing, T_bottom, T_fluid] = chamber_iteration(T_plate, T_glazing, T_bottom, T_fluido)
+        [T_plate, T_glazing, T_bottom, T_fluid] = chamber_iteration(T_plate, T_glazing, T_bottom, T_fluido, T_ambient);
 	%end
 
 
